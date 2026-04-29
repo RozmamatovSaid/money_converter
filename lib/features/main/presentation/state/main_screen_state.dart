@@ -93,5 +93,14 @@ abstract class MainScreenState extends State<MainScreen> {
     );
   }
 
+  String formatExchangeRate(
+    CurrencyEntity fromCurrency,
+    CurrencyEntity toCurrency,
+  ) {
+    final double exchangeRate =
+        (fromCurrency.rate / fromCurrency.nominal) /
+        (toCurrency.rate / toCurrency.nominal);
 
+    return exchangeRate.toStringAsFixed(4);
+  }
 }

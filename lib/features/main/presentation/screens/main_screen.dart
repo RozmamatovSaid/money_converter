@@ -22,17 +22,6 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends MainScreenState {
-  String _formatExchangeRate(
-    CurrencyEntity fromCurrency,
-    CurrencyEntity toCurrency,
-  ) {
-    final double exchangeRate =
-        (fromCurrency.rate / fromCurrency.nominal) /
-        (toCurrency.rate / toCurrency.nominal);
-
-    return exchangeRate.toStringAsFixed(4);
-  }
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -184,7 +173,7 @@ class _MainScreenState extends MainScreenState {
                       return Align(
                         alignment: Alignment.centerLeft,
                         child: AppText(
-                          '${rateFromCurrency.nominal} ${rateFromCurrency.ccy} = ${_formatExchangeRate(rateFromCurrency, rateToCurrency)} ${rateToCurrency.ccy}',
+                          '${rateFromCurrency.nominal} ${rateFromCurrency.ccy} = ${formatExchangeRate(rateFromCurrency, rateToCurrency)} ${rateToCurrency.ccy}',
                           color: AppColors.black,
                           fontSize: 16,
                           fontWeight: FontWeight.w700,

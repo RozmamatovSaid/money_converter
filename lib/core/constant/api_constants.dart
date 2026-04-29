@@ -6,4 +6,3 @@ class ApiConstants {
   // static const String currencyURL = '';
 }
 
-// api.openweathermap.org/data/2.5/forecast?lat=41.326551&lon=69.284544&appid=7c60e1d1ade6db5197cebce3dfbe4717

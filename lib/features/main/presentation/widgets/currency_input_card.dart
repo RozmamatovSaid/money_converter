@@ -26,7 +26,7 @@ class CurrencyInputCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       spacing: 14,
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: [
         AppText(title, fontSize: 15, color: AppColors.textHint),
         Row(
@@ -38,7 +38,7 @@ class CurrencyInputCard extends StatelessWidget {
                 spacing: 8,
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.circular(100),
+                    borderRadius: .circular(100),
                     child: CachedNetworkImage(
                       width: 45,
                       height: 45,

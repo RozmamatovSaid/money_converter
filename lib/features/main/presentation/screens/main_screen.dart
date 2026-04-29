@@ -107,7 +107,7 @@ class _MainScreenState extends MainScreenState {
                         radius: .circular(20),
                         child: Column(
                           spacing: 14,
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: .start,
                           children: [
                             state.isSwap ? fromAmount : toAmount,
                             SizedBox(
